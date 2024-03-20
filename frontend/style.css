@@ -1,0 +1,477 @@
+body {
+    margin: 0;
+    padding: 0;
+   
+    overflow-x: hidden;
+    
+  }
+
+::selection {
+    background-color: #f03d0794;
+    color: white; /* Change la couleur du texte sélectionné en blanc */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    height: 100vh; 
+}
+
+.header {
+
+    display: flex; 
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.text-pr {
+
+    color: white;
+    margin: 0;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.text-sc {
+
+    color: white;
+    margin: 0;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.bild {
+    margin-left: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+}
+
+.dashed-line {
+    border-bottom: 2px dashed #f03e07
+}
+
+.biographie {
+    margin : 30px;
+}
+
+.text-biogra {
+    color : #f03e07;
+}
+
+.conception {
+    margin : 30px;
+}
+
+.text-concep {
+    color : #f03e07;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 10px;
+    
+}
+
+.image-item {
+    overflow: hidden; 
+
+}
+.image-item img { 
+    height: 300px;
+    width: 300;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.486);
+    
+}
+
+.contact {
+        
+    color : #f03e07;
+    margin: 30px;
+}
+
+.cont-concep {
+
+    margin-top: 50px;
+    margin-bottom: 10px;
+    
+}
+.coor {
+    flex: 1;
+    padding-bottom: 20px;
+    
+}
+
+.addr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.486);
+    text-align: center;
+
+    
+}
+
+.form {
+    flex: 0 0 auto;
+    background-color: #f03e07; 
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.form-field {
+
+    width: 80%;
+    height: 25px;
+    margin : 6px;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.575);
+    border: none;
+    padding: 8px;
+
+}
+
+.form-submit {
+
+    width: 84%;
+    height: 50px;
+    margin : 6px;
+    border-radius: 5px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: #002241;
+    padding: 8px;
+
+
+}
+
+.form-textArea {
+
+    width: 80%;
+    padding: 8px;
+    margin : 6px;
+    border-radius: 5px;
+    border: none;
+    resize: vertical;
+    margin-top : 20px;
+
+}
+
+
+.image-item {
+    position: relative;
+    display: inline-block; 
+}
+
+
+.image-item img {
+    transition: transform 0.3s ease; 
+}
+
+.image-item:hover img {
+    transform: scale(1.1); 
+}
+
+.image-item:hover .image-title {
+    opacity: 1;
+}
+
+
+.image-title {
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(235, 225, 225, 0.7); 
+    color: rgb(218, 82, 19);
+    padding: 10px;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+::-webkit-scrollbar {
+    width: 5px; 
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #00000000;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #000000e8; 
+  }
+
+  .form-text-pr-lt{
+
+    color: white;
+    text-align: left;
+    margin-left: 10%;
+    font-weight: bold;
+
+  }
+ 
+  .form-text-pr{
+
+    margin-top : 20px;
+    color: white; 
+
+  }
+
+    .nummer{
+
+    margin-top: 20%;
+
+    }
+
+  
+  
+
+
+  @media only screen and (min-width: 800px) {
+    /* Pour les écrans de 800px de largeur et plus */
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        
+      }
+
+      ::selection {
+        background-color: #f03e07d0;
+        color: white; /* Change la couleur du texte sélectionné en blanc */
+    }
+
+    
+    .header {
+
+        display: flex; 
+        align-items: center;
+        background-color: black;
+        width: 100%;
+        justify-content: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+    }
+
+    .text-pr {
+
+        color: white;
+        margin: 0;
+        font-size: 35px;
+        text-align: center;
+
+    }
+
+    .text-sc {
+
+        color: white;
+        margin: 0;
+        font-size: 25px;
+        text-align: center;
+
+    }
+
+    .bild {
+        margin-left: 50px;
+        width: 300px;
+        height: 300px;
+        border-radius: 150px;
+    }
+
+    .dashed-line {
+        border-bottom: 2px dashed #f03e07
+    }
+
+    .biographie {
+        margin : 50px;
+    }
+
+    .text-biogra {
+        color : #f03e07;
+    }
+
+    .conception {
+        margin : 50px;
+    }
+
+    .text-concep {
+        color : #f03e07;
+    }
+
+    .contact {
+        
+        color : #f03e07;
+    }
+
+    .cont-concep {
+
+        margin-top: 10px;
+        margin-left : 10px;
+        margin-bottom: 10px;
+        
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+        gap: 10px;
+    }
+    
+    .image-item {
+        overflow: hidden; 
+        
+    }
+    .image-item img { 
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.486);
+        margin: 20px;
+       
+    }
+
+    .addr {
+        display: flex;
+        border-radius: 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.486);
+        text-align: center;
+
+        
+    }
+
+    .form {
+        flex: 0 0 auto;
+        background-color: #f03e07; 
+        padding: 20px;
+        width: 45%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+    }
+
+    .form-field {
+
+        width: 80%;
+        height: 35px;
+        margin : 6px;
+        border-radius: 5px;
+        border-color: rgba(0, 0, 0, 0.575);
+        border: none;
+        padding: 8px;
+
+    }
+
+    .form-submit {
+
+        width: 84%;
+        height: 50px;
+        margin : 6px;
+        border-radius: 5px;
+        border: none;
+        color: rgb(255, 255, 255);
+        background-color: #002241;
+        padding: 20px;
+
+
+    }
+
+    .form-textArea {
+
+        width: 80%;
+        padding: 8px;
+        margin : 6px;
+        border-radius: 5px;
+        border: none;
+        resize: vertical;
+        margin-top : 20px;
+
+    }
+
+    .coor {
+        flex: 1;
+        margin-top: 10px;
+        margin-bottom: 10ox;
+        
+    }
+
+    .image-item {
+        position: relative;
+        display: inline-block; 
+    }
+    
+
+    .image-item img {
+        transition: transform 0.3s ease; 
+    }
+
+    footer {
+        margin : 50px;
+    }
+
+    .image-item:hover img {
+        transform: scale(1.1); 
+    }
+    
+    .image-item:hover .image-title {
+        opacity: 1;
+    }
+
+
+    .image-title {
+        position: absolute;
+        border-radius: 10px;
+        left:40%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(235, 225, 225, 0.7); 
+        color: rgb(218, 82, 19);
+        padding: 10px;
+        opacity: 0; 
+        transition: opacity 0.3s ease;
+        text-align: center; 
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #00000000; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #000000e8;
+      }
+
+      .form-text-pr-lt{
+
+        color: white;
+        text-align: left;
+        margin-left: 10%;
+        font-weight: bold;
+
+      }
+     
+      .form-text-pr{
+
+        margin-top : 15px;
+        color: white; 
+
+      }
+
+      .nummer{
+
+        margin-top: 20%;
+
+      }
+  }
