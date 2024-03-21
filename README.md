@@ -2,7 +2,7 @@
 projet backend et frontend du test mymee
 
 - [Installer](##setup)
-- [Description du backend](##Description du backend)
+- [Description du backend](##Description-Backend)
 
 ## Setup
 
@@ -14,7 +14,7 @@ Placé le projet dans le repertoir htdocs de votre serveur local puis dans votre
 - **127.0.0.1/Wymee-test/backend** : pour acceder au projet backend 
 - **127.0.0.1/Wymee-test/frontend/index.html** : pour acceder au projet frontend
 
-## Description du backend
+## Description-Backend
     backend/
     ├── articles .sql
     ├── Controlers
