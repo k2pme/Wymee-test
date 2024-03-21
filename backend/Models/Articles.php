@@ -110,7 +110,7 @@
 
             }catch(PDOException $e){
 
-
+                echo $e;
             }
 
         }
@@ -133,7 +133,7 @@
 
 
             }catch(PDOException $e){
-
+                echo $e;
 
             }
         }
@@ -146,7 +146,7 @@
             try{
 
                 $pdo = new PDO("mysql:host=localhost;dbname=wyMeeTest", "root", "");
-                $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); # /!\EN DEV SEULEMENT !
 
                 return $pdo;
 
