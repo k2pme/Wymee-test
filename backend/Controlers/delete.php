@@ -1,4 +1,8 @@
 <?php
+    /*
+     *Controler de suppression d'un article
+     *
+     */
     $id = $_POST['id'];
     
     if($_SERVER["REQUEST_METHOD"] == "POST"){

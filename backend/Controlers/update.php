@@ -1,23 +1,27 @@
 <?php
     
+    /*
+     *Controler de modification d'un article depuis un formulaire
+     *dans la base de donnée
+     */
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     
     if((isset($_POST['id']) && isset($_POST['title']) && isset($_POST['content'])) && (!empty($_POST['id']) && !empty($_POST['title']) && !empty($_POST['content']))) {
     
-    $id = $_POST['id'];
-    $title = $_POST['title'];
-    $contenu = $_POST['content'];
+        $id = $_POST['id'];
+        $title = $_POST['title'];
+        $contenu = $_POST['content'];
 
-    require_once("../Models/Articles.php");
-
-
+        require_once("../Models/Articles.php");
 
 
 
-    Articles::update( trim($id), trim($title), trim($contenu));
 
-    header("Location: ../Views/read.html.php?id=$id");
+
+        Articles::update( trim($id), trim($title), trim($contenu));
+
+        header("Location: ../Views/read.html.php?id=$id");
 
     }else{
 

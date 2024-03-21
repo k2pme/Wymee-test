@@ -1,6 +1,11 @@
 <?php
 
     class Articles {
+        /**
+         * Class Articles 
+         * Lire directement les inforations 
+         * de la table articles dans la base de donnée wyMeeTest
+         */
 
         private $titre;
         private $contenu;
@@ -15,6 +20,9 @@
         }
 
         public function create(){
+            /*Fonction permettant de creer l'objet Articles 
+             *dans la base de donnée
+             */
 
             try {
 
@@ -35,6 +43,10 @@
 
 
         public static function readAll(){
+
+            /*Fonction permettant de lire tous les articles
+             *dans la base de donnée
+             */
 
             try {
 
@@ -59,6 +71,10 @@
         }
 
         public static function findOne($id){
+            /*Fonction permettant de trouver un article
+             *dans la base de donnée
+             */
+
             try {
 
                 $pdo = self::conn();
@@ -74,6 +90,9 @@
         }
 
         public static function update($id, $titre, $contenu){
+            /*Fonction permettant de modifier un article
+             *dans la base de donnée
+             */
 
             try{
 
@@ -97,6 +116,11 @@
         }
 
         public static function delete($id){
+
+            /*Fonction permettant de supprimer un articles
+             *dans la base de donnée
+             */
+
             try{
 
                 $pdo = self::conn();
@@ -115,6 +139,9 @@
         }
 
         private static function conn(){
+            /*Fonction permettant d'avoir une instance de connexion vers
+             *la base de donnée
+             */
 
             try{
 

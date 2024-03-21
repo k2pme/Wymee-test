@@ -11,9 +11,11 @@
       <h2>Détail de l'article</h2>
 
       <?php
+        if(isset($_GET['id']) && !empty($_GET['id'])){
 
         require_once("../Models/Articles.php");
 
+        
         $id = $_GET['id'];
 
         $res = Articles::findOne($id);
@@ -36,9 +38,31 @@
                 <a href='update.html.php?id=".$id."' class='btn btn-primary mt-3'>Modifier</a>
                 <a href='delete.html.php?id=$id' class='btn btn-danger mt-3'>Supprimer</a>
                 </div>
-              </div>"
+              </div>";
 
+        }else{
 
+          echo "<!DOCTYPE html>
+            <html lang='fr'>
+            <head>
+              <meta charset='UTF-8'>
+              <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+              <title>Créer un nouvel article</title>
+              <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>
+            </head>
+            <body>
+            <div class='container mt-5'>
+                <div class='alert alert-danger' role='alert'>
+                Il y a eu une erreur d'integrité
+                </div>
+
+            </div>
+            </body>
+            </html>"
+            
+            ;
+
+        }
 
       ?>
       

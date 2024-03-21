@@ -8,26 +8,30 @@
 </head>
 <body>
 
-  <div class="container mt-5">
-    <h2>Supprimer l'article</h2>
-    <div class="alert alert-danger" role="alert">
-      Êtes-vous sûr de vouloir supprimer cet article?
-    </div>
-    <form method="POST" action="../Controlers/delete.php">
+  <div class='container mt-5'>
+      <h2>Supprimer l'article</h2>
     <?php
 
-      if(isset($_GET["id"]) && !empty($_GET["id"])){
+if(isset($_GET['id']) && !empty($_GET['id'])){
+
         $id = $_GET['id'];
         
         echo "
-        <div class='form-group'>
-          <input type='hidden' class='form-control' id='id' name='id' value='$id'>
-        </div>
+        
+          <div class='alert alert-danger' role='alert'>
+            Êtes-vous sûr de vouloir supprimer cet article?
+          </div>
+          <form method='POST' action='../Controlers/delete.php'>
+            <div class='form-group'>
+              <input type='hidden' class='form-control' id='id' name='id' value='$id'>
+            </div>
         
       
-        <button type='submit'  class='btn btn-danger'>Confirmer la suppression</button>
-        <a href='../Views/update.html.php?id=$id' class='btn btn-secondary'>Annuler</a>";
+            <button type='submit'  class='btn btn-danger'>Confirmer la suppression</button>
+            <a href='../Views/update.html.php?id=$id' class='btn btn-secondary'>Annuler</a>";
+
       }else{
+
         echo "<!DOCTYPE html>
             <html lang='fr'>
             <head>
@@ -41,8 +45,6 @@
                 <div class='alert alert-danger' role='alert'>
                 Il y a eu une erreur d'integrité
                 </div>
-
-                <a href='../Views/update.html.php' class='btn btn-primary mt-5'>Retourner au formulaire</a>
             </div>
             </body>
             </html>"

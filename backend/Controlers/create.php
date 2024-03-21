@@ -1,5 +1,7 @@
 <?php
-    
+    /*Controler de creation d'un artcle depuis un formulaire
+     *dans la base de donnée
+     */
 
     if($_SERVER["REQUEST_METHOD"] == "POST"){
 
@@ -15,6 +17,7 @@
             echo $title;
             $articles = new Articles(trim($title), trim($contenu), date('Y-m-d H:i:s'));
             $res = $articles->create();
+
             header("Location: ../index.php");
             exit();
 
