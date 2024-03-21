@@ -27,8 +27,8 @@ cd Wymee-test
 
     4 dossiers, 10 fichiers
 
-Controlers : dossier des controler
-Models : dossier du models Articles
-Views : dossier des views
-articles.sql : fichier sql de la table articles
-index.php : point d'entrer du site
+    > Controlers : dossier des controler
+    > Models : dossier du models Articles
+    > Views : dossier des views
+    > articles.sql : fichier sql de la table articles
+    > index.php : point d'entrer du site
