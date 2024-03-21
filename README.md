@@ -1,8 +1,8 @@
 # wymee frontend and backend test
 projet backend et frontend du test mymee
 
-- [Installer](##setup)
-- [Description du backend](##Description-Backend)
+- [Installer](#setup)
+- [Description du backend](#Description-Backend)
 
 ## Setup
 
