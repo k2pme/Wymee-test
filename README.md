@@ -1,5 +1,8 @@
-#wymee frontend and backend test
+# wymee frontend and backend test
 projet backend et frontend du test mymee
+
+- [Installer](##setup)
+- [Description du backend](##Description du backend)
 
 ## Setup
 
@@ -7,6 +10,9 @@ projet backend et frontend du test mymee
 git clone https://github.com/k2pme/Wymee-test.git  
 cd Wymee-test    
 ```
+Placé le projet dans le repertoir htdocs de votre serveur local puis dans votre navigateur entrer  l'adresse 
+- **127.0.0.1/Wymee-test/backend** : pour acceder au projet backend 
+- **127.0.0.1/Wymee-test/frontend/index.html** : pour acceder au projet frontend
 
 ## Description du backend
     backend/
